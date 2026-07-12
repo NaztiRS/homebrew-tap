@@ -5,7 +5,7 @@ cask "downbender" do
   url "https://github.com/NaztiRS/downbender/releases/download/v#{version}/Downbender.dmg",
       verified: "github.com/NaztiRS/downbender/"
   name "Downbender"
-  desc "Download videos or extract MP3, natively on your Mac — powered by yt-dlp"
+  desc "Video downloader and MP3 extractor powered by yt-dlp"
   homepage "https://naztirs.github.io/downbender/"
 
   auto_updates true

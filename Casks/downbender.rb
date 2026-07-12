@@ -9,10 +9,16 @@ cask "downbender" do
   homepage "https://naztirs.github.io/downbender/"
 
   auto_updates true
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
   depends_on arch: :arm64
 
   app "Downbender.app"
+
+  zap trash: [
+    "~/Library/Application Support/Downbender",
+    "~/Library/Preferences/com.naztirs.downbender.plist",
+    "~/Library/Saved Application State/com.naztirs.downbender.savedState",
+  ]
 
   caveats <<~EOS
     Downbender is free software (GPLv3) and is not notarized by Apple.
@@ -22,10 +28,4 @@ cask "downbender" do
 
       xattr -dr com.apple.quarantine "/Applications/Downbender.app"
   EOS
-
-  zap trash: [
-    "~/Library/Application Support/Downbender",
-    "~/Library/Preferences/com.naztirs.downbender.plist",
-    "~/Library/Saved Application State/com.naztirs.downbender.savedState",
-  ]
 end

@@ -1,6 +1,6 @@
 cask "downbender" do
-  version "1.8.5"
-  sha256 "1716e9542ab5349a528d99edcbd7ca8f67e31a89454cc70f236ab1f683ef4aee"
+  version "1.8.6"
+  sha256 "978240fd257ec007fb9afe4701040bf1ca0b6fab838ca6f70ff7ac05cc522aed"
 
   url "https://github.com/NaztiRS/downbender/releases/download/v#{version}/Downbender.dmg",
       verified: "github.com/NaztiRS/downbender/"
